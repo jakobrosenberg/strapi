@@ -65,6 +65,7 @@
     "strapi-generate-admin": "^3.0.0-alpha.1",
     "strapi-generate-api": "^3.0.0-alpha.1",
     "strapi-generate-new": "^3.0.0-alpha.1",
+    "strapi-generate-plugin": "^3.0.0-alpha.1",
     "strapi-generate-policy": "^3.0.0-alpha.1",
     "strapi-generate-service": "^3.0.0-alpha.1",
     "strapi-mongoose": "^3.0.0-alpha.1",

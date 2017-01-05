@@ -45,6 +45,14 @@ module.exports = function () {
     scope.template = template.tpl;
   }
 
+  const license = _.find(arguments, o => {
+    return o.hasOwnProperty('license');
+  });
+
+  if (license) {
+    scope.license = template.license;
+  }
+
   // Register the generator type.
   // It can be a controller, model, service, etc.
   scope.generatorType = process.argv[2].split(':')[1];

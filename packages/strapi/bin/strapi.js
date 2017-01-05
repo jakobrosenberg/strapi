@@ -74,6 +74,14 @@ cmd.option('-t, --tpl <template>', 'template name');
 cmd.description('generate a basic API');
 cmd.action(require('./strapi-generate'));
 
+// `$ strapi generate:plugin`
+cmd = program.command('generate:plugin');
+cmd.unknownOption = true;
+cmd.option('-t, --tpl <template>', 'template name');
+cmd.option('-l, --license <license>', 'license name');
+cmd.description('generate a new plugin');
+cmd.action(require('./strapi-generate'));
+
 // `$ strapi generate:controller`
 cmd = program.command('generate:controller');
 cmd.unknownOption = NOOP;

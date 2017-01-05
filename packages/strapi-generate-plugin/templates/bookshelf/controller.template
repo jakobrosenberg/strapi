@@ -1,0 +1,19 @@
+'use strict';
+
+/**
+ * A set of functions called "actions" for `<%= globalID %>`
+ */
+
+module.exports = {
+  /**
+   * Index.
+   *
+   * @return {Object|Array}
+   */
+
+  index: async (ctx, next) => {
+    ctx.body = {
+      message: 'You are trying to reach the `index` endpoint of <%= globalID %> plugin.'
+    };
+  }
+};
